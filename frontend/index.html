@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Smart Deployment Manager</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>AI Smart Deployment Manager</h1>
+        </header>
+        
+        <div class="grid">
+            <button onclick="handleRequest('/auto-scale')" class="button">Auto Scale</button>
+            <button onclick="handleRequest('/cost-management')" class="button">Check Costs</button>
+            <button onclick="handleRequest('/error-fix')" class="button">Fix Errors</button>
+            <button onclick="handleRequest('/alerts')" class="button">Check Alerts</button>
+            <button onclick="handleRequest('/optimize')" class="button">Optimize</button>
+        </div>
+
+        <div id="response-container">
+            <h3>Response:</h3>
+            <pre id="response">Click a button to get a response...</pre>
+        </div>
+    </div>
+</body>
+<script defer src="script.js"></script>
+</html>
